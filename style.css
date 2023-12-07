@@ -1,0 +1,417 @@
+@import url("https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+ul {
+  list-style-type: none;
+}
+
+ol {
+  list-style-type: none;
+}
+
+img,
+audio {
+  display: block;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #1f1f1f;
+}
+body .header {
+  margin: 0 0 218px;
+}
+body .header .header_container {
+  width: auto;
+  margin: 0 113px;
+}
+body .header .header_container .nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 70px 0;
+}
+body .header .header_container .nav .logo {
+  color: #fff;
+  font-size: 32px;
+  font-weight: 400;
+  font-family: "Alex Brush", cursive;
+}
+body .header .header_container .nav .li_lists {
+  display: flex;
+  align-items: center;
+}
+body .header .header_container .nav .li_lists > * + * {
+  margin-left: 79px;
+}
+body .header .header_container .nav .li_lists .link_li {
+  color: #989898;
+  font-weight: 400;
+  transition: ease-in-out 0.4s;
+}
+body .header .header_container .nav .li_lists .link_li:hover {
+  color: #fff;
+}
+body .header .header_container .user_name_image {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body .header .header_container .user_name_image .user_name .welcom {
+  color: #fff;
+  font-size: 25px;
+  font-weight: 300;
+}
+body .header .header_container .user_name_image .user_name .name {
+  width: 100%;
+  max-width: 557px;
+  color: #fff;
+  font-size: 67px;
+  font-weight: 600;
+}
+body .header .header_container .user_name_image .user_name .text {
+  color: #fff;
+  font-size: 25px;
+  font-weight: 300;
+}
+body .header .header_container .user_name_image .user_img {
+  width: 100%;
+  max-width: 321px;
+  border-radius: 50%;
+}
+body .main {
+  display: flex;
+}
+body .main .main_container {
+  width: 100%;
+  margin: 0 113px;
+}
+body .main .main_container .main_about {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body .main .main_container .main_about .about_user_image {
+  width: 100%;
+  width: 321px;
+  border-radius: 50%;
+  box-shadow: -20px -20px 8px #999;
+}
+body .main .main_container .main_about .about_user__h1_text .about_user_h1 {
+  color: #fff;
+  font-size: 93px;
+  font-weight: 600;
+}
+body .main .main_container .main_about .about_user__h1_text .about_user_text {
+  width: 521px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+}
+body .my_skills {
+  display: flex;
+  margin: 116px 0 0;
+}
+body .my_skills .my_skills_container {
+  width: 100%;
+  margin: 0 113px;
+}
+body .my_skills .my_skills_container .top_titles {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+body .my_skills .my_skills_container .top_titles > * + * {
+  margin-left: 370px;
+}
+body .my_skills .my_skills_container .top_titles .my_skills_title_h1 {
+  color: #fff;
+  font-size: 56px;
+  font-weight: 600;
+}
+body .my_skills .my_skills_container .top_titles .my_language_title_h1 {
+  color: #fff;
+  font-size: 56px;
+  font-weight: 600;
+}
+body .my_skills .my_skills_container .skill_language {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+}
+body .my_skills .my_skills_container .skill_language .my_skills_row {
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+}
+body .my_skills .my_skills_container .skill_language .my_skills_row .skill_one {
+  margin: 10px 0;
+}
+body .my_skills .my_skills_container .skill_language .my_skills_row .skill_one .skill_title {
+  color: white;
+  font-size: 24px;
+  font-weight: 100;
+  margin: 0 0 10px;
+}
+body .my_skills .my_skills_container .skill_language .my_skills_row .skill_one .progress_bar {
+  width: 600px;
+  height: 10px;
+  border-radius: 5px;
+  background: #999;
+}
+body .my_skills .my_skills_container .skill_language .my_skills_row .skill_one .progress_bar .html {
+  height: 10px;
+  border-radius: 5px;
+  width: 0%;
+  background: red;
+  animation: html 1.1s linear forwards;
+}
+@keyframes html {
+  100% {
+    width: 76%;
+  }
+}
+body .my_skills .my_skills_container .skill_language .my_skills_row .skill_one .progress_bar .protsent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  color: #fff;
+  border-radius: 50%;
+  background: #1f1f1f;
+  float: right;
+  margin: -18px -10px -10px;
+  border: 1px solid red;
+}
+body .my_skills .my_skills_container .skill_language .my_skills_row .skill_two {
+  margin: 10px 0;
+}
+body .my_skills .my_skills_container .skill_language .my_skills_row .skill_two .skill_title {
+  color: white;
+  font-size: 24px;
+  font-weight: 100;
+  margin: 0 0 10px;
+}
+body .my_skills .my_skills_container .skill_language .my_skills_row .skill_two .progress_bar {
+  width: 600px;
+  height: 10px;
+  border-radius: 5px;
+  background: #999;
+}
+body .my_skills .my_skills_container .skill_language .my_skills_row .skill_two .progress_bar .scss {
+  height: 10px;
+  border-radius: 5px;
+  width: 0%;
+  background: #d400ff;
+  animation: scss 1.1s linear forwards;
+}
+@keyframes scss {
+  100% {
+    width: 58%;
+  }
+}
+body .my_skills .my_skills_container .skill_language .my_skills_row .skill_two .progress_bar .protsent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  color: #fff;
+  border-radius: 50%;
+  background: #1f1f1f;
+  float: right;
+  margin: -15px -10px -10px;
+  border: 1px solid #d400ff;
+}
+body .my_skills .my_skills_container .skill_language .my_skills_row .skill_three {
+  margin: 10px 0;
+}
+body .my_skills .my_skills_container .skill_language .my_skills_row .skill_three .skill_title {
+  color: white;
+  font-size: 24px;
+  font-weight: 100;
+  margin: 0 0 10px;
+}
+body .my_skills .my_skills_container .skill_language .my_skills_row .skill_three .progress_bar {
+  width: 600px;
+  height: 10px;
+  border-radius: 5px;
+  background: #999;
+}
+body .my_skills .my_skills_container .skill_language .my_skills_row .skill_three .progress_bar .java_script {
+  height: 10px;
+  border-radius: 5px;
+  width: 0%;
+  background: yellow;
+  animation: java_script 1.1s linear forwards;
+}
+@keyframes java_script {
+  100% {
+    width: 32%;
+  }
+}
+body .my_skills .my_skills_container .skill_language .my_skills_row .skill_three .progress_bar .protsent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  color: #fff;
+  border-radius: 50%;
+  background: #1f1f1f;
+  float: right;
+  margin: -15px -10px -10px;
+  border: 1px solid yellow;
+}
+body .my_skills .my_skills_container .skill_language .my_skills_row .skill_four {
+  margin: 10px 0;
+}
+body .my_skills .my_skills_container .skill_language .my_skills_row .skill_four .skill_title {
+  color: white;
+  font-size: 24px;
+  font-weight: 100;
+  margin: 0 0 10px;
+}
+body .my_skills .my_skills_container .skill_language .my_skills_row .skill_four .progress_bar {
+  width: 600px;
+  height: 10px;
+  border-radius: 5px;
+  background: #999;
+}
+body .my_skills .my_skills_container .skill_language .my_skills_row .skill_four .progress_bar .react {
+  height: 10px;
+  border-radius: 5px;
+  width: 0%;
+  background: blue;
+  animation: react 1s linear forwards;
+}
+@keyframes react {
+  100% {
+    width: 52%;
+  }
+}
+body .my_skills .my_skills_container .skill_language .my_skills_row .skill_four .progress_bar .protsent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  color: #fff;
+  border-radius: 50%;
+  background: #1f1f1f;
+  float: right;
+  margin: -15px -10px -10px;
+  border: 1px solid blue;
+}
+body .my_skills .my_skills_container .skill_language .language_block {
+  width: 100%;
+  max-width: 600px;
+}
+body .my_skills .my_skills_container .skill_language .language_block .language {
+  margin: 40px 0;
+}
+body .my_skills .my_skills_container .skill_language .language_block .language .language_title {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 100;
+  margin: 0 0 10px;
+}
+@media (max-width: 1333px) {
+  body .my_skills .my_skills_container .skill_language .language_block .language .language_title {
+    font-size: 20px;
+  }
+}
+body .my_skills .my_skills_container .skill_language .language_block .language .progress_bar {
+  width: 600px;
+  height: 10px;
+  border-radius: 5px;
+  background: #999;
+}
+body .my_skills .my_skills_container .skill_language .language_block .language .progress_bar .english {
+  height: 10px;
+  border-radius: 5px;
+  width: 0%;
+  background: blue;
+  animation: english 1s linear forwards;
+}
+@keyframes english {
+  100% {
+    width: 10%;
+  }
+}
+body .my_skills .my_skills_container .skill_language .language_block .language .progress_bar .english .protsent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  color: #fff;
+  border-radius: 50%;
+  background: #1f1f1f;
+  float: right;
+  margin: -15px -10px -10px;
+  border: 1px solid blue;
+}
+body .my_skills .my_skills_container .skill_language .language_block .language .progress_bar .rus {
+  height: 10px;
+  border-radius: 5px;
+  width: 0%;
+  background: rgb(255, 0, 0);
+  animation: rus 1s linear forwards;
+}
+@keyframes rus {
+  100% {
+    width: 34%;
+  }
+}
+body .my_skills .my_skills_container .skill_language .language_block .language .progress_bar .rus .protsent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  color: #fff;
+  border-radius: 50%;
+  background: #1f1f1f;
+  float: right;
+  margin: -20px;
+  border: 1px solid rgb(255, 0, 0);
+}
+body .my_skills .my_skills_container .skill_language .language_block .language .progress_bar .uzb {
+  height: 10px;
+  border-radius: 5px;
+  width: 0%;
+  background: rgb(30, 255, 0);
+  animation: uzb 2.6s linear forwards;
+}
+@keyframes uzb {
+  100% {
+    width: 92%;
+  }
+}
+body .my_skills .my_skills_container .skill_language .language_block .language .progress_bar .uzb .protsent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  color: #fff;
+  border-radius: 50%;
+  background: #1f1f1f;
+  float: right;
+  margin: -20px;
+  border: 1px solid rgb(30, 255, 0);
+}/*# sourceMappingURL=style.css.map */
