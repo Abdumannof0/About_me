@@ -20,6 +20,9 @@ audio {
   display: block;
 }
 body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   font-family: "Poppins", sans-serif;
   background: #1f1f1f;
   .header {
@@ -96,6 +99,7 @@ body {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        gap: 20px;
         .about_user_image {
           width: 100%;
           width: 321px;
@@ -122,7 +126,7 @@ body {
 
   .my_skills {
     display: flex;
-    margin: 116px 0 180px;
+    margin: 116px 0 110px;
     .my_skills_container {
       width: 100%;
       margin: 0 113px;
@@ -151,7 +155,7 @@ body {
         gap: 20px;
         .my_skills_row {
           width: 100%;
-          max-width: 600px;
+          // max-width: 600px;
           display: flex;
           flex-direction: column;
           .skill_one {
@@ -163,7 +167,7 @@ body {
               margin: 0 0 10px;
             }
             .progress_bar {
-              width: 600px;
+              width: 100%;
               height: 10px;
               border-radius: 5px;
               background: #999;
@@ -204,7 +208,7 @@ body {
               margin: 0 0 10px;
             }
             .progress_bar {
-              width: 600px;
+              width: 100%;
               height: 10px;
               border-radius: 5px;
               background: #999;
@@ -319,121 +323,28 @@ body {
           }
           // ! 4
         }
-        .language_block {
-          width: 100%;
-          max-width: 600px;
-          .language {
-            margin: 40px 0;
-            .language_title {
-              color: #fff;
-              font-size: max(24px);
-              font-weight: 100;
-              margin: 0 0 10px;
-              @media (max-width: 1333px) {
-                font-size: 20px;
-              }
-            }
-            .progress_bar {
-              width: 600px;
-              height: 10px;
-              border-radius: 5px;
-              background: #999;
-              .english {
-                height: 10px;
-                border-radius: 5px;
-                width: 0%;
-                background: blue;
-                animation: english 1s linear forwards;
-                @keyframes english {
-                  100% {
-                    width: 10%;
-                  }
-                }
-                .protsent {
-                  display: flex;
-                  justify-content: center;
-                  align-items: center;
-                  width: 50px;
-                  height: 50px;
-                  color: #fff;
-                  border-radius: 50%;
-                  background: #1f1f1f;
-                  float: right;
-                  margin: -15px -10px -10px;
-                  border: 1px solid blue;
-                }
-              }
-              .rus {
-                height: 10px;
-                border-radius: 5px;
-                width: 0%;
-                background: rgb(255, 0, 0, 248);
-                animation: rus 1s linear forwards;
-                @keyframes rus {
-                  100% {
-                    width: 34%;
-                  }
-                }
-                .protsent {
-                  display: flex;
-                  justify-content: center;
-                  align-items: center;
-                  width: 50px;
-                  height: 50px;
-                  color: #fff;
-                  border-radius: 50%;
-                  background: #1f1f1f;
-                  float: right;
-                  margin: -20px;
-                  border: 1px solid rgb(255, 0, 0);
-                }
-              }
-              .uzb {
-                height: 10px;
-                border-radius: 5px;
-                width: 0%;
-                background: rgb(30, 255, 0);
-                animation: uzb 2.6s linear forwards;
-                @keyframes uzb {
-                  100% {
-                    width: 92%;
-                  }
-                }
-                .protsent {
-                  display: flex;
-                  justify-content: center;
-                  align-items: center;
-                  width: 50px;
-                  height: 50px;
-                  color: #fff;
-                  border-radius: 50%;
-                  background: #1f1f1f;
-                  float: right;
-                  margin: -20px;
-                  border: 1px solid rgb(30, 255, 0);
-                }
-              }
-            }
-          }
-        }
       }
     }
   }
   // ! MY_SKILLS
 
-  .contact_block {
-    .contact_contauner {
-      width: 1440px;
-      padding: 0 113px;
+  .contact_contauner {
+    width: 100%;
+    padding: 0 110px;
+    .contact_block {
+      max-width: 1440px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px;
       .contact_content {
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 20px;
         width: 100%;
+        max-width: 570px;
         height: auto;
-        max-width: 800px;
-        margin: 0 auto;
         padding: 20px;
         border: 1px solid #666;
         border-radius: 18px;
@@ -443,7 +354,7 @@ body {
           gap: 30px;
           .contact_input_label {
             .contact_form {
-              width: 350px;
+              width: 100%;
               border: 1px solid #333;
               border-radius: 5px;
               transition: all 0.4s;
@@ -453,7 +364,7 @@ body {
             }
             .input {
               color: #fff;
-              width: 350px;
+              width: 100%;
               padding: 5px;
               font-size: 20px;
               border: none;
@@ -467,11 +378,8 @@ body {
           }
         }
         .contact_textarea {
+          width: 100%;
           outline: none;
-          max-width: 730px;
-          min-width: 730px;
-          min-height: 100px;
-          max-height: 100px;
           color: #999;
           padding: 10px;
           font-size: 18px;
@@ -500,6 +408,14 @@ body {
             color: #fff;
             border: 1px solid #fff;
             background: #99999918;
+          }
+        }
+      }
+      .image_contact {
+        .img_conatact {
+          max-width: 500px;
+          @media only screen and (max-width: 1024px) {
+            max-width: 400px;
           }
         }
       }

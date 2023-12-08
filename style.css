@@ -25,6 +25,9 @@ audio {
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   font-family: "Poppins", sans-serif;
   background: #1f1f1f;
 }
@@ -100,6 +103,7 @@ body .main .main_container .main_about {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 20px;
 }
 body .main .main_container .main_about .about_user_image {
   width: 100%;
@@ -120,7 +124,7 @@ body .main .main_container .main_about .about_user__h1_text .about_user_text {
 }
 body .my_skills {
   display: flex;
-  margin: 116px 0 180px;
+  margin: 116px 0 110px;
 }
 body .my_skills .my_skills_container {
   width: 100%;
@@ -152,7 +156,6 @@ body .my_skills .my_skills_container .skill_language {
 }
 body .my_skills .my_skills_container .skill_language .my_skills_row {
   width: 100%;
-  max-width: 600px;
   display: flex;
   flex-direction: column;
 }
@@ -166,7 +169,7 @@ body .my_skills .my_skills_container .skill_language .my_skills_row .skill_one .
   margin: 0 0 10px;
 }
 body .my_skills .my_skills_container .skill_language .my_skills_row .skill_one .progress_bar {
-  width: 600px;
+  width: 100%;
   height: 10px;
   border-radius: 5px;
   background: #999;
@@ -206,7 +209,7 @@ body .my_skills .my_skills_container .skill_language .my_skills_row .skill_two .
   margin: 0 0 10px;
 }
 body .my_skills .my_skills_container .skill_language .my_skills_row .skill_two .progress_bar {
-  width: 600px;
+  width: 100%;
   height: 10px;
   border-radius: 5px;
   background: #999;
@@ -316,159 +319,63 @@ body .my_skills .my_skills_container .skill_language .my_skills_row .skill_four 
   margin: -15px -10px -10px;
   border: 1px solid blue;
 }
-body .my_skills .my_skills_container .skill_language .language_block {
+body .contact_contauner {
   width: 100%;
-  max-width: 600px;
+  padding: 0 110px;
 }
-body .my_skills .my_skills_container .skill_language .language_block .language {
-  margin: 40px 0;
-}
-body .my_skills .my_skills_container .skill_language .language_block .language .language_title {
-  color: #fff;
-  font-size: 24px;
-  font-weight: 100;
-  margin: 0 0 10px;
-}
-@media (max-width: 1333px) {
-  body .my_skills .my_skills_container .skill_language .language_block .language .language_title {
-    font-size: 20px;
-  }
-}
-body .my_skills .my_skills_container .skill_language .language_block .language .progress_bar {
-  width: 600px;
-  height: 10px;
-  border-radius: 5px;
-  background: #999;
-}
-body .my_skills .my_skills_container .skill_language .language_block .language .progress_bar .english {
-  height: 10px;
-  border-radius: 5px;
-  width: 0%;
-  background: blue;
-  animation: english 1s linear forwards;
-}
-@keyframes english {
-  100% {
-    width: 10%;
-  }
-}
-body .my_skills .my_skills_container .skill_language .language_block .language .progress_bar .english .protsent {
+body .contact_contauner .contact_block {
+  max-width: 1440px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  width: 50px;
-  height: 50px;
-  color: #fff;
-  border-radius: 50%;
-  background: #1f1f1f;
-  float: right;
-  margin: -15px -10px -10px;
-  border: 1px solid blue;
+  gap: 10px;
 }
-body .my_skills .my_skills_container .skill_language .language_block .language .progress_bar .rus {
-  height: 10px;
-  border-radius: 5px;
-  width: 0%;
-  background: rgb(255, 0, 0);
-  animation: rus 1s linear forwards;
-}
-@keyframes rus {
-  100% {
-    width: 34%;
-  }
-}
-body .my_skills .my_skills_container .skill_language .language_block .language .progress_bar .rus .protsent {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 50px;
-  height: 50px;
-  color: #fff;
-  border-radius: 50%;
-  background: #1f1f1f;
-  float: right;
-  margin: -20px;
-  border: 1px solid rgb(255, 0, 0);
-}
-body .my_skills .my_skills_container .skill_language .language_block .language .progress_bar .uzb {
-  height: 10px;
-  border-radius: 5px;
-  width: 0%;
-  background: rgb(30, 255, 0);
-  animation: uzb 2.6s linear forwards;
-}
-@keyframes uzb {
-  100% {
-    width: 92%;
-  }
-}
-body .my_skills .my_skills_container .skill_language .language_block .language .progress_bar .uzb .protsent {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 50px;
-  height: 50px;
-  color: #fff;
-  border-radius: 50%;
-  background: #1f1f1f;
-  float: right;
-  margin: -20px;
-  border: 1px solid rgb(30, 255, 0);
-}
-body .contact_block .contact_contauner {
-  width: 1440px;
-  padding: 0 113px;
-}
-body .contact_block .contact_contauner .contact_content {
+body .contact_contauner .contact_block .contact_content {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 20px;
   width: 100%;
+  max-width: 570px;
   height: auto;
-  max-width: 800px;
-  margin: 0 auto;
   padding: 20px;
   border: 1px solid #666;
   border-radius: 18px;
 }
-body .contact_block .contact_contauner .contact_content .contact_inputs {
+body .contact_contauner .contact_block .contact_content .contact_inputs {
   display: flex;
   justify-content: space-between;
   gap: 30px;
 }
-body .contact_block .contact_contauner .contact_content .contact_inputs .contact_input_label .contact_form {
-  width: 350px;
+body .contact_contauner .contact_block .contact_content .contact_inputs .contact_input_label .contact_form {
+  width: 100%;
   border: 1px solid #333;
   border-radius: 5px;
   transition: all 0.4s;
 }
-body .contact_block .contact_contauner .contact_content .contact_inputs .contact_input_label .contact_form:hover {
+body .contact_contauner .contact_block .contact_content .contact_inputs .contact_input_label .contact_form:hover {
   border: 1px solid #fff;
 }
-body .contact_block .contact_contauner .contact_content .contact_inputs .contact_input_label .input {
+body .contact_contauner .contact_block .contact_content .contact_inputs .contact_input_label .input {
   color: #fff;
-  width: 350px;
+  width: 100%;
   padding: 5px;
   font-size: 20px;
   border: none;
   outline: none;
   background: transparent;
 }
-body .contact_block .contact_contauner .contact_content .contact_inputs .contact_input_label .input::-moz-placeholder {
+body .contact_contauner .contact_block .contact_content .contact_inputs .contact_input_label .input::-moz-placeholder {
   color: #999;
   font-size: 18px;
 }
-body .contact_block .contact_contauner .contact_content .contact_inputs .contact_input_label .input::placeholder {
+body .contact_contauner .contact_block .contact_content .contact_inputs .contact_input_label .input::placeholder {
   color: #999;
   font-size: 18px;
 }
-body .contact_block .contact_contauner .contact_content .contact_textarea {
+body .contact_contauner .contact_block .contact_content .contact_textarea {
+  width: 100%;
   outline: none;
-  max-width: 730px;
-  min-width: 730px;
-  min-height: 100px;
-  max-height: 100px;
   color: #999;
   padding: 10px;
   font-size: 18px;
@@ -477,20 +384,20 @@ body .contact_block .contact_contauner .contact_content .contact_textarea {
   background: transparent;
   transition: all 0.4s;
 }
-body .contact_block .contact_contauner .contact_content .contact_textarea::-moz-placeholder {
+body .contact_contauner .contact_block .contact_content .contact_textarea::-moz-placeholder {
   color: #999;
   padding: 1px;
   font-size: 18px;
 }
-body .contact_block .contact_contauner .contact_content .contact_textarea::placeholder {
+body .contact_contauner .contact_block .contact_content .contact_textarea::placeholder {
   color: #999;
   padding: 1px;
   font-size: 18px;
 }
-body .contact_block .contact_contauner .contact_content .contact_textarea:hover {
+body .contact_contauner .contact_block .contact_content .contact_textarea:hover {
   border: 1px solid #fff;
 }
-body .contact_block .contact_contauner .contact_content .conatct_btn {
+body .contact_contauner .contact_block .contact_content .conatct_btn {
   color: #999;
   padding: 14px 16px;
   font-size: 22px;
@@ -499,8 +406,16 @@ body .contact_block .contact_contauner .contact_content .conatct_btn {
   background: transparent;
   transition: all 0.4s;
 }
-body .contact_block .contact_contauner .contact_content .conatct_btn:hover {
+body .contact_contauner .contact_block .contact_content .conatct_btn:hover {
   color: #fff;
   border: 1px solid #fff;
   background: rgba(153, 153, 153, 0.0941176471);
+}
+body .contact_contauner .contact_block .image_contact .img_conatact {
+  max-width: 500px;
+}
+@media only screen and (max-width: 1024px) {
+  body .contact_contauner .contact_block .image_contact .img_conatact {
+    max-width: 400px;
+  }
 }/*# sourceMappingURL=style.css.map */
