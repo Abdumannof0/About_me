@@ -54,6 +54,7 @@ body {
         justify-content: space-between;
         align-items: center;
         padding: 70px 0;
+
         @media (max-width: 1080px) {
           padding: 40px 0;
         }
@@ -601,15 +602,19 @@ body {
   }
   // ! MY_SKILLS
 
-  .contact_contauner {
+  .contact_container {
     width: 100%;
     padding: 0 110px;
+    @media (max-width: 768px) {
+      padding: 0 30px;
+    }
     .contact_block {
-      max-width: 1440px;
       display: flex;
-      justify-content: space-between;
+      justify-content: center;
       align-items: center;
       gap: 10px;
+      width: 100%;
+      margin: 30px 0 30px;
       .contact_content {
         display: flex;
         flex-direction: column;
@@ -621,6 +626,12 @@ body {
         padding: 20px;
         border: 1px solid #666;
         border-radius: 18px;
+        @media (max-width: 1024px) {
+          max-width: 510px;
+        }
+        @media (max-width: 768px) {
+          max-width: 430px;
+        }
         .contact_inputs {
           display: flex;
           justify-content: space-between;
@@ -649,12 +660,16 @@ body {
               @media (max-width: 1024px) {
                 font-size: 18px;
               }
-              @media only screen and (max-width: 890px) {
+              @media only screen and (max-width: 425px) {
                 font-size: 14px;
               }
-              &::placeholder {
-                color: #999;
-                font-size: 18px;
+              @media only screen and (max-width: 375px) {
+                padding: 5px;
+                font-size: 12px;
+              }
+              @media only screen and (max-width: 768px) {
+                padding: 5px;
+                font-size: 14px;
               }
             }
           }
@@ -669,19 +684,18 @@ body {
           border-radius: 8px;
           background: transparent;
           transition: all 0.4s;
-          @media (max-width: 1024px) {
-            font-size: 16px;
-          }
-          @media only screen and (max-width: 890px) {
+          @media only screen and (max-width: 425px) {
             font-size: 14px;
           }
-          &::placeholder {
-            color: #999;
-            padding: 1px;
-            font-size: 18px;
+          @media only screen and (max-width: 375px) {
+            padding: 5px;
+            font-size: 12px;
           }
           &:hover {
             border: 1px solid #fff;
+          }
+          @media only screen and (max-width: 768px) {
+            font-size: 14px;
           }
         }
         .conatct_btn {
@@ -702,20 +716,6 @@ body {
             color: #fff;
             border: 1px solid #fff;
             background: #99999918;
-          }
-        }
-      }
-      .image_contact {
-        .img_conatact {
-          max-width: 500px;
-          @media only screen and (max-width: 1080px) {
-            max-width: 400px;
-          }
-          @media only screen and (max-width: 1024px) {
-            max-width: 300px;
-          }
-          @media only screen and (max-width: 890px) {
-            max-width: 260px;
           }
         }
       }

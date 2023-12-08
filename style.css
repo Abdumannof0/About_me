@@ -744,18 +744,24 @@ body .my_skills .my_skills_container .skill_language .my_skills_row .skill_four 
   margin: -15px -10px -10px;
   border: 1px solid blue;
 }
-body .contact_contauner {
+body .contact_container {
   width: 100%;
   padding: 0 110px;
 }
-body .contact_contauner .contact_block {
-  max-width: 1440px;
+@media (max-width: 768px) {
+  body .contact_container {
+    padding: 0 30px;
+  }
+}
+body .contact_container .contact_block {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   gap: 10px;
+  width: 100%;
+  margin: 30px 0 30px;
 }
-body .contact_contauner .contact_block .contact_content {
+body .contact_container .contact_block .contact_content {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -767,26 +773,36 @@ body .contact_contauner .contact_block .contact_content {
   border: 1px solid #666;
   border-radius: 18px;
 }
-body .contact_contauner .contact_block .contact_content .contact_inputs {
+@media (max-width: 1024px) {
+  body .contact_container .contact_block .contact_content {
+    max-width: 510px;
+  }
+}
+@media (max-width: 768px) {
+  body .contact_container .contact_block .contact_content {
+    max-width: 430px;
+  }
+}
+body .contact_container .contact_block .contact_content .contact_inputs {
   display: flex;
   justify-content: space-between;
   gap: 30px;
 }
-body .contact_contauner .contact_block .contact_content .contact_inputs .contact_input_label .contact_form {
+body .contact_container .contact_block .contact_content .contact_inputs .contact_input_label .contact_form {
   width: 100%;
   border: 1px solid #333;
   border-radius: 5px;
   transition: all 0.4s;
 }
 @media only screen and (max-width: 890px) {
-  body .contact_contauner .contact_block .contact_content .contact_inputs .contact_input_label .contact_form {
+  body .contact_container .contact_block .contact_content .contact_inputs .contact_input_label .contact_form {
     font-size: 14px;
   }
 }
-body .contact_contauner .contact_block .contact_content .contact_inputs .contact_input_label .contact_form:hover {
+body .contact_container .contact_block .contact_content .contact_inputs .contact_input_label .contact_form:hover {
   border: 1px solid #fff;
 }
-body .contact_contauner .contact_block .contact_content .contact_inputs .contact_input_label .input {
+body .contact_container .contact_block .contact_content .contact_inputs .contact_input_label .input {
   color: #fff;
   width: 100%;
   padding: 5px;
@@ -796,24 +812,28 @@ body .contact_contauner .contact_block .contact_content .contact_inputs .contact
   background: transparent;
 }
 @media (max-width: 1024px) {
-  body .contact_contauner .contact_block .contact_content .contact_inputs .contact_input_label .input {
+  body .contact_container .contact_block .contact_content .contact_inputs .contact_input_label .input {
     font-size: 18px;
   }
 }
-@media only screen and (max-width: 890px) {
-  body .contact_contauner .contact_block .contact_content .contact_inputs .contact_input_label .input {
+@media only screen and (max-width: 425px) {
+  body .contact_container .contact_block .contact_content .contact_inputs .contact_input_label .input {
     font-size: 14px;
   }
 }
-body .contact_contauner .contact_block .contact_content .contact_inputs .contact_input_label .input::-moz-placeholder {
-  color: #999;
-  font-size: 18px;
+@media only screen and (max-width: 375px) {
+  body .contact_container .contact_block .contact_content .contact_inputs .contact_input_label .input {
+    padding: 5px;
+    font-size: 12px;
+  }
 }
-body .contact_contauner .contact_block .contact_content .contact_inputs .contact_input_label .input::placeholder {
-  color: #999;
-  font-size: 18px;
+@media only screen and (max-width: 768px) {
+  body .contact_container .contact_block .contact_content .contact_inputs .contact_input_label .input {
+    padding: 5px;
+    font-size: 14px;
+  }
 }
-body .contact_contauner .contact_block .contact_content .contact_textarea {
+body .contact_container .contact_block .contact_content .contact_textarea {
   width: 100%;
   outline: none;
   color: #999;
@@ -824,30 +844,26 @@ body .contact_contauner .contact_block .contact_content .contact_textarea {
   background: transparent;
   transition: all 0.4s;
 }
-@media (max-width: 1024px) {
-  body .contact_contauner .contact_block .contact_content .contact_textarea {
-    font-size: 16px;
-  }
-}
-@media only screen and (max-width: 890px) {
-  body .contact_contauner .contact_block .contact_content .contact_textarea {
+@media only screen and (max-width: 425px) {
+  body .contact_container .contact_block .contact_content .contact_textarea {
     font-size: 14px;
   }
 }
-body .contact_contauner .contact_block .contact_content .contact_textarea::-moz-placeholder {
-  color: #999;
-  padding: 1px;
-  font-size: 18px;
+@media only screen and (max-width: 375px) {
+  body .contact_container .contact_block .contact_content .contact_textarea {
+    padding: 5px;
+    font-size: 12px;
+  }
 }
-body .contact_contauner .contact_block .contact_content .contact_textarea::placeholder {
-  color: #999;
-  padding: 1px;
-  font-size: 18px;
-}
-body .contact_contauner .contact_block .contact_content .contact_textarea:hover {
+body .contact_container .contact_block .contact_content .contact_textarea:hover {
   border: 1px solid #fff;
 }
-body .contact_contauner .contact_block .contact_content .conatct_btn {
+@media only screen and (max-width: 768px) {
+  body .contact_container .contact_block .contact_content .contact_textarea {
+    font-size: 14px;
+  }
+}
+body .contact_container .contact_block .contact_content .conatct_btn {
   color: #999;
   padding: 14px 16px;
   font-size: 22px;
@@ -857,35 +873,17 @@ body .contact_contauner .contact_block .contact_content .conatct_btn {
   transition: all 0.4s;
 }
 @media (max-width: 1024px) {
-  body .contact_contauner .contact_block .contact_content .conatct_btn {
+  body .contact_container .contact_block .contact_content .conatct_btn {
     font-size: 18px;
   }
 }
 @media only screen and (max-width: 890px) {
-  body .contact_contauner .contact_block .contact_content .conatct_btn {
+  body .contact_container .contact_block .contact_content .conatct_btn {
     font-size: 16px;
   }
 }
-body .contact_contauner .contact_block .contact_content .conatct_btn:hover {
+body .contact_container .contact_block .contact_content .conatct_btn:hover {
   color: #fff;
   border: 1px solid #fff;
   background: rgba(153, 153, 153, 0.0941176471);
-}
-body .contact_contauner .contact_block .image_contact .img_conatact {
-  max-width: 500px;
-}
-@media only screen and (max-width: 1080px) {
-  body .contact_contauner .contact_block .image_contact .img_conatact {
-    max-width: 400px;
-  }
-}
-@media only screen and (max-width: 1024px) {
-  body .contact_contauner .contact_block .image_contact .img_conatact {
-    max-width: 300px;
-  }
-}
-@media only screen and (max-width: 890px) {
-  body .contact_contauner .contact_block .image_contact .img_conatact {
-    max-width: 260px;
-  }
 }/*# sourceMappingURL=style.css.map */
