@@ -120,7 +120,7 @@ body .main .main_container .main_about .about_user__h1_text .about_user_text {
 }
 body .my_skills {
   display: flex;
-  margin: 116px 0 0;
+  margin: 116px 0 180px;
 }
 body .my_skills .my_skills_container {
   width: 100%;
@@ -414,4 +414,93 @@ body .my_skills .my_skills_container .skill_language .language_block .language .
   float: right;
   margin: -20px;
   border: 1px solid rgb(30, 255, 0);
+}
+body .contact_block .contact_contauner {
+  width: 1440px;
+  padding: 0 113px;
+}
+body .contact_block .contact_contauner .contact_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  height: auto;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #666;
+  border-radius: 18px;
+}
+body .contact_block .contact_contauner .contact_content .contact_inputs {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+body .contact_block .contact_contauner .contact_content .contact_inputs .contact_input_label .contact_form {
+  width: 350px;
+  border: 1px solid #333;
+  border-radius: 5px;
+  transition: all 0.4s;
+}
+body .contact_block .contact_contauner .contact_content .contact_inputs .contact_input_label .contact_form:hover {
+  border: 1px solid #fff;
+}
+body .contact_block .contact_contauner .contact_content .contact_inputs .contact_input_label .input {
+  color: #fff;
+  width: 350px;
+  padding: 5px;
+  font-size: 20px;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+body .contact_block .contact_contauner .contact_content .contact_inputs .contact_input_label .input::-moz-placeholder {
+  color: #999;
+  font-size: 18px;
+}
+body .contact_block .contact_contauner .contact_content .contact_inputs .contact_input_label .input::placeholder {
+  color: #999;
+  font-size: 18px;
+}
+body .contact_block .contact_contauner .contact_content .contact_textarea {
+  outline: none;
+  max-width: 730px;
+  min-width: 730px;
+  min-height: 100px;
+  max-height: 100px;
+  color: #999;
+  padding: 10px;
+  font-size: 18px;
+  border: 1px solid #333;
+  border-radius: 8px;
+  background: transparent;
+  transition: all 0.4s;
+}
+body .contact_block .contact_contauner .contact_content .contact_textarea::-moz-placeholder {
+  color: #999;
+  padding: 1px;
+  font-size: 18px;
+}
+body .contact_block .contact_contauner .contact_content .contact_textarea::placeholder {
+  color: #999;
+  padding: 1px;
+  font-size: 18px;
+}
+body .contact_block .contact_contauner .contact_content .contact_textarea:hover {
+  border: 1px solid #fff;
+}
+body .contact_block .contact_contauner .contact_content .conatct_btn {
+  color: #999;
+  padding: 14px 16px;
+  font-size: 22px;
+  border: 1px solid #333;
+  border-radius: 8px;
+  background: transparent;
+  transition: all 0.4s;
+}
+body .contact_block .contact_contauner .contact_content .conatct_btn:hover {
+  color: #fff;
+  border: 1px solid #fff;
+  background: rgba(153, 153, 153, 0.0941176471);
 }/*# sourceMappingURL=style.css.map */
