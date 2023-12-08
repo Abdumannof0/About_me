@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 a {
   text-decoration: none;
@@ -20,52 +21,171 @@ audio {
   display: block;
 }
 body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   font-family: "Poppins", sans-serif;
   background: #1f1f1f;
   .header {
     margin: 0 0 218px;
+    @media (max-width: 1080px) {
+      margin: 0 0 180px;
+    }
+    @media (max-width: 1024px) {
+      margin: 0 0 140px;
+    }
+    @media (max-width: 768px) {
+      margin: 0 0 100px;
+    }
     .header_container {
       width: auto;
       margin: 0 113px;
+      @media (max-width: 1080px) {
+        margin: 0 90px;
+      }
+      @media (max-width: 825px) {
+        margin: 0 60px;
+      }
+      @media (max-width: 768px) {
+        margin: 0 30px;
+      }
+      @media (max-width: 375px) {
+        margin: 0 20px;
+      }
       .nav {
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding: 70px 0;
+        @media (max-width: 1080px) {
+          padding: 40px 0;
+        }
+        @media (max-width: 425px) {
+          padding: 10px 0;
+        }
+        @media (max-width: 375px) {
+          padding: 10px 0;
+        }
         .logo {
           color: #fff;
           font-size: 32px;
           font-weight: 400;
           font-family: "Alex Brush", cursive;
+          @media (max-width: 1080px) {
+            font-size: 28px;
+          }
+          @media (max-width: 990px) {
+            font-size: 22px;
+          }
+          @media (max-width: 880px) {
+            font-size: 18px;
+          }
+          @media (max-width: 768px) {
+            font-size: 16px;
+          }
+          @media (max-width: 680px) {
+            font-size: 14px;
+          }
+          @media (max-width: 480px) {
+            font-size: 12px;
+          }
+          @media (max-width: 425px) {
+            font-size: 20px;
+          }
+          @media (max-width: 375px) {
+            font-size: 18px;
+          }
+        }
+        .icon_li_lists {
+          display: none;
+          @media (max-width: 425px) {
+            display: block;
+            width: 24px;
+            height: 24px;
+            background: transparent;
+          }
+          @media (max-width: 375px) {
+            display: block;
+            width: 20px;
+            height: 20px;
+            background: transparent;
+          }
         }
         .li_lists {
           display: flex;
           align-items: center;
+          @media (max-width: 425px) {
+            display: none;
+          }
           & > * + * {
             margin-left: 79px;
+            @media (max-width: 880px) {
+              margin-left: 50px;
+            }
+            @media (max-width: 680px) {
+              margin-left: 30px;
+            }
+            @media (max-width: 480px) {
+              margin-left: 24px;
+            }
           }
           .link_li {
             color: #989898;
+            font-size: 18px;
             font-weight: 400;
             transition: ease-in-out 0.4s;
             &:hover {
               color: #fff;
             }
+            @media (max-width: 1080px) {
+              font-size: 18px;
+            }
+            @media (max-width: 990px) {
+              font-size: 16px;
+            }
+            @media (max-width: 880px) {
+              font-size: 12px;
+            }
+            @media (max-width: 768px) {
+              font-size: 14px;
+            }
+            @media (max-width: 680px) {
+              font-size: 12px;
+            }
+            @media (max-width: 480px) {
+              font-size: 10px;
+            }
           }
         }
       }
+      // ! NAV
+
       .user_name_image {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        @media (max-width: 425px) {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
         .user_name {
           .welcom {
             color: #fff;
             font-size: max(25px);
             font-weight: 300;
+            @media (max-width: 1024px) {
+              font-size: 22px;
+            }
+            @media (max-width: 768px) {
+              font-size: 25px;
+            }
+            @media (max-width: 560px) {
+              font-size: 25px;
+            }
+            @media (max-width: 470px) {
+              font-size: 20px;
+            }
+            @media (max-width: 425px) {
+              font-size: 23px;
+            }
           }
           .name {
             width: 100%;
@@ -73,17 +193,89 @@ body {
             color: #fff;
             font-size: max(67px);
             font-weight: 600;
+            @media (max-width: 1024px) {
+              max-width: 532px;
+              font-size: 56px;
+              font-weight: 500;
+            }
+            @media (max-width: 1024px) {
+              font-size: 48px;
+              font-weight: 500;
+            }
+            @media (max-width: 768px) {
+              font-size: max(50px);
+              font-weight: 500;
+            }
+            @media (max-width: 660px) {
+              font-size: max(40px);
+              font-weight: 400;
+            }
+            @media (max-width: 560px) {
+              font-size: max(30px);
+              font-weight: 400;
+            }
+            @media (max-width: 470px) {
+              font-size: max(26px);
+              font-weight: 400;
+            }
+            @media (max-width: 425px) {
+              font-size: max(40px);
+              font-weight: 400;
+            }
           }
           .text {
             color: #fff;
             font-size: max(25px);
             font-weight: 300;
+            @media (max-width: 1024px) {
+              font-size: 20px;
+              font-weight: 200;
+            }
+            @media (max-width: 880px) {
+              font-size: 18px;
+              font-weight: 200;
+            }
+            @media (max-width: 768px) {
+              font-size: 14px;
+              font-weight: 200;
+            }
+            @media (max-width: 560px) {
+              font-size: 12px;
+              font-weight: 200;
+            }
+            @media (max-width: 470px) {
+              font-size: 10px;
+              font-weight: 200;
+            }
+            @media (max-width: 425px) {
+              font-size: 20px;
+              font-weight: 300;
+            }
           }
         }
         .user_img {
           width: 100%;
           max-width: 321px;
           border-radius: 50%;
+          @media (max-width: 1024px) {
+            max-width: 280px;
+          }
+          @media (max-width: 880px) {
+            max-width: 220px;
+          }
+          @media (max-width: 660px) {
+            max-width: 200px;
+          }
+          @media (max-width: 560px) {
+            max-width: 180px;
+          }
+          @media (max-width: 470px) {
+            max-width: 140px;
+          }
+          @media (max-width: 425px) {
+            max-width: 300px;
+            margin: 30px 0 0;
+          }
         }
       }
     }
@@ -95,28 +287,109 @@ body {
     .main_container {
       width: 100%;
       margin: 0 113px;
+      @media (max-width: 1080px) {
+        margin: 0 90px;
+      }
+      @media (max-width: 768px) {
+        margin: 0 30px;
+      }
       .main_about {
         display: flex;
         justify-content: space-between;
         align-items: center;
         gap: 20px;
+        @media (max-width: 550px) {
+          display: flex;
+          flex-direction: column-reverse;
+          gap: 30px;
+        }
         .about_user_image {
           width: 100%;
           width: 321px;
           border-radius: 50%;
           box-shadow: -20px -20px 8px #999;
+          @media (max-width: 1080px) {
+            width: 300px;
+          }
+          @media (max-width: 1024px) {
+            width: 280px;
+          }
+          @media (max-width: 880px) {
+            width: 220px;
+          }
+          @media (max-width: 768px) {
+            width: 220px;
+            box-shadow: -16px -16px 8px #999;
+          }
+          @media (max-width: 550px) {
+            width: 321px;
+            border-radius: 1%;
+            box-shadow: -16px -16px 8px #999;
+          }
+          @media (max-width: 425px) {
+            width: 300px;
+            border-radius: 1%;
+            box-shadow: -16px -16px 8px #999;
+          }
+          @media (max-width: 375px) {
+            width: 300px;
+            border-radius: 1%;
+            box-shadow: -1px -2px 8px #999;
+          }
         }
         .about_user__h1_text {
           .about_user_h1 {
             color: #fff;
             font-size: max(93px);
             font-weight: 600;
+            line-height: 100%;
+            @media (max-width: 1080px) {
+              font-size: 80px;
+            }
+            @media (max-width: 1024px) {
+              font-size: 70px;
+            }
+            @media (max-width: 990px) {
+              font-size: 60px;
+            }
+            @media (max-width: 768px) {
+              font-size: 50px;
+            }
+            @media (max-width: 550px) {
+              font-size: 93px;
+            }
+            @media (max-width: 425px) {
+              font-size: 80px;
+            }
           }
           .about_user_text {
+            width: 100%;
             width: max(521px);
             color: #fff;
             font-size: max(14px);
             font-weight: 400;
+            @media (max-width: 1080px) {
+              font-size: 12px;
+            }
+            @media (max-width: 1024px) {
+              font-size: 10px;
+            }
+            @media (max-width: 990px) {
+              width: max(400px);
+              font-size: 10px;
+            }
+            @media (max-width: 768px) {
+              width: max(300px);
+              font-size: 9px;
+            }
+            @media (max-width: 590px) {
+              width: max(280px);
+              font-size: 9px;
+            }
+            @media (max-width: 550px) {
+              width: 100%;
+              font-size: 14px;
+            }
           }
         }
       }
@@ -358,6 +631,9 @@ body {
               border: 1px solid #333;
               border-radius: 5px;
               transition: all 0.4s;
+              @media only screen and (max-width: 890px) {
+                font-size: 14px;
+              }
               &:hover {
                 border: 1px solid #fff;
               }
@@ -370,6 +646,12 @@ body {
               border: none;
               outline: none;
               background: transparent;
+              @media (max-width: 1024px) {
+                font-size: 18px;
+              }
+              @media only screen and (max-width: 890px) {
+                font-size: 14px;
+              }
               &::placeholder {
                 color: #999;
                 font-size: 18px;
@@ -387,6 +669,12 @@ body {
           border-radius: 8px;
           background: transparent;
           transition: all 0.4s;
+          @media (max-width: 1024px) {
+            font-size: 16px;
+          }
+          @media only screen and (max-width: 890px) {
+            font-size: 14px;
+          }
           &::placeholder {
             color: #999;
             padding: 1px;
@@ -404,6 +692,12 @@ body {
           border-radius: 8px;
           background: transparent;
           transition: all 0.4s;
+          @media (max-width: 1024px) {
+            font-size: 18px;
+          }
+          @media only screen and (max-width: 890px) {
+            font-size: 16px;
+          }
           &:hover {
             color: #fff;
             border: 1px solid #fff;
@@ -414,8 +708,14 @@ body {
       .image_contact {
         .img_conatact {
           max-width: 500px;
-          @media only screen and (max-width: 1024px) {
+          @media only screen and (max-width: 1080px) {
             max-width: 400px;
+          }
+          @media only screen and (max-width: 1024px) {
+            max-width: 300px;
+          }
+          @media only screen and (max-width: 890px) {
+            max-width: 260px;
           }
         }
       }
