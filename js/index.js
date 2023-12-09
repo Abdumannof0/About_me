@@ -7,7 +7,7 @@ form.addEventListener("submit", (e) => {
     let email = document.getElementById('text2').value
     let message = document.getElementById('text3').value
 
-    let my_text = `Resalt is:%0A - Text1: ${text} %0A - Text2: ${email} %0A - Text3: ${message}`
+    let my_text = `Resalt is:%0A - UserName: ${text} %0A - UserEmail: ${email} %0A - Message: ${message}`
 
     let token = "6878364378:AAHc6KogYCEwwpEoyQrfvFhVERHIe5D0uW8"
 
