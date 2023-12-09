@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
-    <!-- <script src="./js/index.js" defer></script> -->
+    <script src="./js/index.js" defer></script>
     <title>Abduvaliev's Portfolio</title>
   </head>
   <body>
@@ -74,35 +74,35 @@
     <!-- ! SKILLS -->
     <div class="contact_container" id="/contact">
       <div class="contact_block">
-        <div class="contact_content">
-          <div class="contact_inputs">
-            <label class="contact_input_label">
-              <form class="contact_form" id="tg">
+        <form id="form">
+          <div class="contact_content">
+            <div class="contact_inputs">
+              <label class="contact_input_label">
                 <input
+                  id="text1"
                   type="text"
-                  class="input"
+                  class="input _req _error"
                   placeholder="Enter your name"
                 />
-              </form>
-            </label>
-            <label class="contact_input_label">
-              <form class="contact_form" id="tg">
+              </label>
+              <label class="contact_input_label">
                 <input
+                  id="text2"
                   type="email"
-                  class="input"
+                  class="input _req _email _error"
                   placeholder="Enter your email"
                 />
-              </form>
-            </label>
+              </label>
+            </div>
+            <textarea
+              id="text3"
+              name="textarea"
+              class="contact_textarea _req"
+              placeholder="Enter your messages"
+            ></textarea>
+            <button class="conatct_btn" type="submit">Submit</button>
           </div>
-          <textarea
-            id="text"
-            name="textarea"
-            class="contact_textarea"
-            placeholder="Enter your messages"
-          ></textarea>
-          <button class="conatct_btn" type="submit">Submit</button>
-        </div>
+        </form>
       </div>
     </div>
   </body>

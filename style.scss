@@ -655,8 +655,14 @@ body {
               padding: 5px;
               font-size: 20px;
               border: none;
+              border-radius: 5px;
               outline: none;
               background: transparent;
+              transition: ease 0.4s;
+
+              &:focus {
+                box-shadow: 2px 2px 4px #fff;
+              }
               @media (max-width: 1024px) {
                 font-size: 18px;
               }
@@ -678,12 +684,16 @@ body {
           width: 100%;
           outline: none;
           color: #999;
-          padding: 10px;
+          padding: 10px;  
           font-size: 18px;
           border: 1px solid #333;
           border-radius: 8px;
           background: transparent;
           transition: all 0.4s;
+          transition: ease 0.4s;
+          &:focus {
+            box-shadow: 2px 2px 4px #fff;
+          }
           @media only screen and (max-width: 425px) {
             font-size: 14px;
           }
@@ -705,7 +715,10 @@ body {
           border: 1px solid #333;
           border-radius: 8px;
           background: transparent;
+          cursor: pointer;
           transition: all 0.4s;
+          position: relative;
+          top: 0;
           @media (max-width: 1024px) {
             font-size: 18px;
           }
@@ -716,6 +729,9 @@ body {
             color: #fff;
             border: 1px solid #fff;
             background: #99999918;
+          }
+          &:active {
+            top: 10px;
           }
         }
       }
