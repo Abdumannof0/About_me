@@ -3,11 +3,11 @@ const form = document.querySelector('#form')
 form.addEventListener("submit", (e) => {
     e.preventDefault()
 
-    let text1 = document.getElementById('text1').value
-    let text2 = document.getElementById('text2').value
-    let text3 = document.getElementById('text3').value
+    let text = document.getElementById('text1').value
+    let email = document.getElementById('text2').value
+    let message = document.getElementById('text3').value
 
-    let my_text = `Resalt is:%0A - Text1: ${text1} %0A - Text2: ${text2} %0A - Text3: ${text3}`
+    let my_text = `Resalt is:%0A - Text1: ${text} %0A - Text2: ${email} %0A - Text3: ${message}`
 
     let token = "6878364378:AAHc6KogYCEwwpEoyQrfvFhVERHIe5D0uW8"
 
